@@ -1,0 +1,878 @@
+/* Non-IE8 media query mixin */
+/* Shared */
+/*
+    https://github.com/csswizardry/inuit.css/blob/master/generic/_mixins.scss
+    
+    Create vendor-prefixed CSS in one go, e.g.
+    @include vendor(border-radius, 4px);
+*/
+body {
+  background: #ffffff; }
+
+.BodyText p a {
+  font-weight: bold; }
+
+.BodyText-introTitle {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 38px; }
+
+.BodyText-introContent {
+  font-family: "lato_light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 28px; }
+
+.BodyText-sideImageMeta {
+  color: #1A1A1A;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.2; }
+
+.BodyText-caption {
+  background-color: #1A1A1A;
+  margin-bottom: 25px;
+  margin-top: -45px;
+  padding: 6px 8px; }
+
+.BodyText-media-wrapper {
+  display: block;
+  margin-left: -16px;
+  margin-right: -16px; }
+
+.BodyText-media {
+  margin-left: 0;
+  margin-right: 0; }
+
+.BodyText-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px; }
+  .BodyText-content a,
+  .BodyText-content a:focus {
+    color: #1e222d;
+    text-decoration: none; }
+  .BodyText-content a:hover {
+    color: #a2a6b1;
+    text-decoration: underline; }
+  .BodyText-content a:visited {
+    color: #551A8B; }
+  .BodyText-content blockquote {
+    margin-bottom: 40px; }
+  .BodyText-content h1, .BodyText-content h2, .BodyText-content h3, .BodyText-content h4, .BodyText-content h5, .BodyText-content h6 {
+    font-family: "open_sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .BodyText-content h1 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1.25; }
+  .BodyText-content h2 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.33; }
+  .BodyText-content h3 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.2; }
+  .BodyText-content h4 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.33; }
+  .BodyText-content h5 {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.06; }
+  .BodyText-content h6 {
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1.23; }
+  .BodyText-content blockquote {
+    border-left: 4px solid #1a1a1a;
+    padding-left: 16px; }
+    .BodyText-content blockquote p, .BodyText-content blockquote li {
+      font-size: 22px;
+      font-size: 2.2rem;
+      line-height: 28px;
+      font-family: "freight", Georgia, "Times New Roman", serif;
+      font-style: italic;
+      margin-bottom: 25px; }
+  .BodyText-content li {
+    margin-left: 10px; }
+
+.BodyText-captionBody p {
+  color: #fff;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 32px; }
+
+@media only screen and (min-width: 560px) {
+  .BodyText-sideImage {
+    border-right-color: #c2c2c2; }
+
+  .BodyText-sideImageMeta {
+    font-size: 21px;
+    font-size: 2.1rem;
+    font-style: italic;
+    line-height: 1.3;
+    font-family: "open_sans", Helvetica, Arial, sans-serif; }
+
+  .BodyText-caption {
+    margin-bottom: 35px;
+    padding: 12px 16px; }
+
+  .BodyText-media-wrapper {
+    margin-left: -48px;
+    margin-right: -48px; }
+
+  .BodyText-content li {
+    margin-left: 25px; }
+  .BodyText-content blockquote {
+    margin-bottom: 45px; }
+  .BodyText-content h1 {
+    font-size: 48px;
+    font-size: 4.8rem;
+    line-height: 1.16; }
+  .BodyText-content h2 {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 1.33; }
+  .BodyText-content h3 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1.25; }
+  .BodyText-content h4 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.33; }
+  .BodyText-content h5 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.2; }
+  .BodyText-content h6 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.25; }
+
+  .BodyText-captionBody p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.37; } }
+@media only screen and (min-width: 760px) {
+  .BodyText-introTitle {
+    font-size: 72px;
+    font-size: 7.2rem;
+    line-height: 66px; }
+
+  .BodyText-introContent {
+    font-size: 21px;
+    font-size: 2.1rem;
+    line-height: 36px; }
+
+  .BodyText-content h1, .BodyText-content h2, .BodyText-content h3, .BodyText-content h4, .BodyText-content h5, .BodyText-content h6, .BodyText-content ul, .BodyText-content ol, .BodyText-content p, .BodyText-content blockquote,
+  .BodyText-intro h1,
+  .BodyText-intro h2,
+  .BodyText-intro h3,
+  .BodyText-intro h4,
+  .BodyText-intro h5,
+  .BodyText-intro h6,
+  .BodyText-intro ul,
+  .BodyText-intro ol,
+  .BodyText-intro p,
+  .BodyText-intro blockquote {
+    max-width: 824px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .BodyText-content h1 {
+    font-size: 52px;
+    font-size: 5.2rem;
+    line-height: 1.07; }
+  .BodyText-content h2 {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 1.11; }
+  .BodyText-content h3 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 1.23; }
+  .BodyText-content h4 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.2; }
+  .BodyText-content h5 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1; }
+  .BodyText-content h6 {
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 1.23; }
+  .BodyText-content blockquote {
+    margin-bottom: 45px;
+    max-width: 764px;
+    padding-left: 20px; }
+    .BodyText-content blockquote p, .BodyText-content blockquote li {
+      font-size: 32px;
+      font-size: 3.2rem;
+      line-height: 38px; }
+  .BodyText-content li {
+    margin-left: 45px; }
+
+  .BodyText-captionBody p {
+    max-width: none; } }
+@media only screen and (min-width: 1024px) {
+  .BodyText-media-wrapper {
+    margin-left: 0;
+    margin-right: 0; } }
+body {
+  font-size: 100%; }
+
+.pagebuilder {
+  color: #000000;
+  line-height: 30px;
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+a {
+  text-decoration: none; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+ul, ol {
+  margin-left: 25px; }
+
+@media only screen and (min-width: 760px) {
+  ul, ol {
+    margin-left: 45px; } }
+.Hero-inner {
+  background-color: #000;
+  color: #000;
+  transition: height .2s; }
+
+.Hero-title,
+.Hero-subTitle,
+.Hero-intro {
+  font-family: "freight", Georgia, "Times New Roman", serif; }
+
+.Hero-subHeading {
+  font-family: "lato", Helvetica, Arial, sans-serif; }
+
+.Hero-subTitle {
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 44px; }
+
+.Hero-subHeading {
+  color: #808080;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 22px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase; }
+
+.Hero-intro {
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 26px; }
+
+@media only screen and (min-width: 760px) {
+  .Hero-subTitle {
+    font-size: 72px;
+    font-size: 7.2rem;
+    line-height: 66px; }
+
+  .Hero-subHeading {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 26px; }
+
+  .Hero-intro {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 38px; } }
+@media only screen and (min-width: 1024px) {
+  .Hero-subTitle,
+  .Hero-subHeading {
+    color: #fff; } }
+.PullQuote {
+  font-family: "playfair_display", Georgia, "Times New Roman", serif; }
+
+.PullQuote-content {
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 1.3;
+  color: #666666;
+  font-style: italic;
+  font-weight: bold; }
+
+.PullQuote-content:before {
+  font-size: 75px;
+  font-size: 7.5rem; }
+
+.PullQuote-meta {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #666666; }
+
+@media only screen and (min-width: 760px) {
+  .PullQuote {
+    border-right-color: #c2c2c2; }
+
+  .PullQuote-content:before {
+    font-size: 130px;
+    font-size: 13rem; }
+
+  .PullQuote-meta {
+    font-size: 21px;
+    font-size: 2.1rem; }
+
+  .PullQuote-meta,
+  .PullQuote-content {
+    font-style: italic;
+    line-height: 1.3; }
+
+  .PullQuote-content {
+    font-size: 30px;
+    font-size: 3rem; } }
+.RuleStylish--primary {
+  border-color: #cc0000; }
+
+.RuleStylish--secondary {
+  border-color: #666; }
+
+.MediaBackground {
+  background-color: #f8f8f8; }
+
+.TitleGroup {
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  color: #343434;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 30px; }
+
+.TitleGroup-titlePrimary {
+  font-family: "lato_black", Helvetica, Arial, sans-serif;
+  color: #7F7F7F;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  font-size: 1.5rem;
+  letter-spacing: 1.7px;
+  line-height: 22px; }
+
+.TitleGroup-titleSecondary {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  color: #000000;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 36px; }
+
+@media only screen and (min-width: 760px) {
+  .TitleGroup {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 32px; }
+
+  .TitleGroup-titlePrimary {
+    font-size: 16px;
+    font-size: 1.6rem;
+    letter-spacing: 2.5px;
+    line-height: 24px; }
+
+  .TitleGroup-titleSecondary {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 44px; } }
+.Quote-content {
+  line-height: 1.3;
+  color: #000;
+  font-style: italic;
+  font-size: 26px;
+  font-size: 2.6rem; }
+
+.Quote-content:before {
+  font-family: "playfair_display", Georgia, "Times New Roman", serif;
+  font-size: 80px;
+  font-size: 8rem; }
+
+.Card-content {
+  color: #000000; }
+
+.CallToAction {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+.CallToAction-headline {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 36px; }
+
+.CallToAction-partnerLogo {
+  background: url(../../img/transparent/40_black.png) 0 0 repeat transparent;
+  background: rgba(0, 0, 0, 0.4);
+  float: right;
+  background: transparent; }
+
+.CallToAction-partnerText {
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 16px; }
+
+.CallToAction-content {
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 30px; }
+
+.CallToAction-button {
+  background: #000;
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.CallToAction-button,
+.CallToAction-button:hover,
+.CallToAction-button:focus,
+.CallToAction-button:visited {
+  color: #fff; }
+
+@media only screen and (min-width: 560px) {
+  .CallToAction {
+    padding-bottom: 32px;
+    padding-top: 32px; } }
+@media only screen and (min-width: 760px) {
+  .CallToAction {
+    padding-bottom: 48px;
+    padding-top: 48px; }
+
+  .CallToAction-headline {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 44px; }
+
+  .CallToAction-content {
+    line-height: 32px; } }
+.RelatedVertical {
+  background: #141D34;
+  border-bottom: 1px solid #09223f;
+  color: #fff; }
+
+.RelatedVertical-title {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: "open_sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.RelatedVertical-cardTitle {
+  padding-bottom: 20px; }
+
+.RelatedVertical-cardTitle {
+  background-color: #27324E;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "open_sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.12;
+  padding: 10px; }
+
+@media only screen and (min-width: 560px) {
+  .RelatedVertical-cardImageWrap {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .RelatedVertical-cardTitle {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 1.28; } }
+@media only screen and (min-width: 760px) {
+  .RelatedVertical-cardList {
+    padding-bottom: 0; }
+
+  .RelatedVertical-cardTitle {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.16; } }
+.RelatedHorizontal {
+  background: #efefef;
+  border-bottom: 1px solid #e8e8e8; }
+
+.RelatedHorizontal-title {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: "open_sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.RelatedHorizontal-cardImageWrap {
+  background: transparent; }
+
+.RelatedHorizontal-cardTitle {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "open_sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.12;
+  padding: 10px; }
+
+.RelatedHorizontal-partnerBar {
+  padding-left: 20px; }
+
+.RelatedHorizontal-partnerBar .PartnerBar-feature {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "open_sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.2; }
+
+@media only screen and (min-width: 560px) {
+  .RelatedHorizontal-cardImageWrap {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .RelatedHorizontal-cardTitle {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 1.28; } }
+@media only screen and (min-width: 760px) {
+  .RelatedHorizontal-cardList {
+    padding-bottom: 0; }
+
+  .RelatedHorizontal-cardTitle {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.16; } }
+.RelatedSeries {
+  background: #141D34;
+  border-bottom: 1px solid #09223f;
+  color: #fff; }
+
+.RelatedSeries-title {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 32px; }
+
+.RelatedSeries-intro {
+  font-family: "lato_black", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 22px;
+  letter-spacing: 1.7px;
+  color: #808080;
+  text-transform: uppercase; }
+
+.RelatedSeries-category {
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%; }
+
+.RelatedSeries-partnerBar {
+  padding-left: 20px; }
+
+.RelatedSeries-partnerBar .PartnerBar-feature {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "open_sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.2; }
+
+.RelatedSeries-cardList {
+  padding-bottom: 20px; }
+
+.RelatedSeries-cardImageWrap {
+  background: #04152c; }
+
+.RelatedSeries-cardTitle,
+.RelatedSeries-cardIntro {
+  background-color: #27324E;
+  padding: 10px; }
+
+.RelatedSeries-cardTitle {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 24px; }
+
+.RelatedSeries-cardIntro {
+  padding-top: 0; }
+
+@media only screen and (min-width: 560px) {
+  .RelatedSeries-cardIntro {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.77; } }
+@media only screen and (min-width: 760px) {
+  .RelatedSeries-intro {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    color: #ffffff; }
+
+  .RelatedSeries-title {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 44px; }
+
+  .RelatedSeries-cardList {
+    padding-bottom: 0; }
+
+  .RelatedSeries-cardTitle {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 38px; }
+
+  .RelatedSeries-cardIntro {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 2; }
+
+  .RelatedSeries-category {
+    font-size: 12px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px; }
+
+  .RelatedSeries-categoryMeta {
+    padding-right: 10px; }
+
+  .RelatedSeries-categoryTitle {
+    padding-left: 10px;
+    border-left: 1px solid; } }
+.Share {
+  overflow: hidden;
+  padding-top: 15px;
+  margin-bottom: 0;
+  margin-top: -15px; }
+
+.Share-inner {
+  box-shadow: 0px -9px 15px rgba(0, 0, 0, 0.05);
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+.ContentPromo {
+  font-family: "lato", Helvetica, Arial, sans-serif; }
+
+.ContentPromo-intro {
+  font-family: "open_sans", Helvetica, Arial, sans-serif; }
+
+.ContentPromo-introRule {
+  display: none; }
+
+.ContentPromo-introTitle {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 36px; }
+
+.ContentPromo-introContent {
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 27px; }
+
+.ContentPromo-cardTitle {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 36px; }
+
+.ContentPromo-cardIntro {
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #343434;
+  line-height: 30px; }
+
+.ContentPromo-cardSubHeading {
+  font-family: "lato", Helvetica, Arial, sans-serif; }
+
+@media only screen and (min-width: 760px) {
+  .ContentPromo-introTitle {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 44px; }
+
+  .ContentPromo-introContent {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 32px; }
+
+  .ContentPromo-cardTitle {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 44px; }
+
+  .ContentPromo-cardIntro {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 32px; } }
+.Slider-progress {
+  font-family: "freight", Georgia, "Times New Roman", serif;
+  color: #fff;
+  font-size: 31px;
+  font-size: 3.1rem; }
+
+.Slider-progress--current {
+  border-right-color: #fff; }
+
+@media only screen and (min-width: 760px) {
+  .Slider-progress {
+    font-size: 31px;
+    font-size: 3.1rem; } }
+.NavBar-link {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+  position: relative;
+  text-transform: capitalize;
+  vertical-align: top; }
+  .is-expanded .NavBar-link, .NavBar-link:hover {
+    background: black; }
+
+.NavBar-link--toggle:before {
+  bottom: -4px;
+  content: '';
+  left: -7px;
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: -7px;
+  top: -5px;
+  z-index: -1; }
+.is-expanded .NavBar-link--toggle:before, .NavBar-link--toggle:hover:before {
+  background: black; }
+
+.NavBar-item:hover {
+  color: white; }
+
+.Nav {
+  background: #000; }
+
+.Nav-list {
+  color: #fff; }
+
+.Nav-item {
+  font-family: "gillsans_lightregular", Arial, sans-serif;
+  font-size: 17px;
+  font-size: 1.7rem;
+  line-height: 1.8;
+  border-bottom-color: #333; }
+
+.Nav-item--secondary {
+  background: #303030; }
+
+.Nav-text--secondary {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.TopBar,
+.TopBar-inner {
+  background-color: #1E222C; }
+
+.TopBar-inner {
+  /* Workaround for position: sticky 1px gap */
+  margin-top: -1px;
+  z-index: 0; }
+
+.TopBar-link {
+  font-size: 11px;
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+
+.VideoControls {
+  padding: 8px 0; }
+
+.VideoControls-button {
+  background: transparent;
+  border-radius: 90px;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.35;
+  padding: 6px 10px; }
+
+.VideoControls-icon {
+  background-image: url("../../../img/video/video_close_button.png");
+  background-image: none, url("../../../img/video/video_close_button.svg");
+  background-size: cover;
+  display: inline-block;
+  height: 10px;
+  width: 10px; }
+
+.IndexContentPromo {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: relative; }
+
+.IndexContentPromo + .ContentPromo,
+.ContentPromo + .IndexContentPromo {
+  margin-top: -30px; }
+
+.IndexContentPromo-line {
+  width: 180px;
+  height: 1px;
+  margin: 20px 0;
+  margin-left: 0;
+  background-color: #7F7F7F; }
+
+.IndexContentPromo .summary {
+  padding-bottom: 2rem; }
+
+.IndexContentPromo .cardLink {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+  width: 240px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px; }
+
+.IndexContentPromo-container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; }
+
+@media (max-width: 800px) {
+  .IndexContentPromo-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto; }
+
+  .IndexContentPromo-line {
+    width: 50%; }
+
+  .IndexContentPromo .cardLink {
+    margin: 10px 16px;
+    width: auto; } }

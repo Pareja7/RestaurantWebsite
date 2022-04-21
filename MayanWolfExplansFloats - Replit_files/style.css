@@ -1,0 +1,135 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box; /*resizes borders*/
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both; 
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*adjust typography defaults */
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+html, body {
+  height: 100%; /*viewport is declared in the html*/
+}
+header{
+  height:10vh;
+  width:100%;
+  border: 2px solid red;
+}
+.header-left{
+  height:100%;
+  width:20%;
+  border: 2px solid gray;
+  float:left;
+
+}
+.header-middle{
+  height:100%;
+  width:60%;
+  border: 2px solid gray;
+  float:left;
+
+}
+.header-right{
+  height:100%;
+  width:20%;
+  border: 2px solid gray;
+  float:left;
+
+}
+
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.hero {
+  height: 45%;
+  width: 100%;
+  border: 2px solid green;
+}
+  .other-content{
+  height:45%;
+  width:100%;
+  border: 2px solid red;
+}
+.hero-content{
+  height:100%;
+  width:50%; 
+  border:2px solid black;
+  float: left;
+}
+.gallery{
+  height: 50%;
+  width: 50%;
+  border: 2px solid hotpink;
+  float: left; 
+}
+.left{
+  height: 100%;
+  width:33.33%;
+  border:2px solid rebeccapurple;
+  float: left; 
+}
+.middle{
+  height: 100%;
+  width: 33.33%;
+  border: 2px solid gold;
+  float: left;
+}
+.right{
+  height: 100%;
+  width: 33.33%;
+  border: 2px solid purple;
+  float:left;
+}
+
+.gallery-small{
+  height: 33.33%;
+  width: 100%;
+  border: 2px solid purple;
+ 
+}
+.gallery-large{
+  height: 66.66%;
+  width: 100%;
+  border: 2px solid red;
+  
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
