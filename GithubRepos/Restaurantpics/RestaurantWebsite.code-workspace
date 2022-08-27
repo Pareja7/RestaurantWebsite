@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../RestaurantAssets"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Restaurantpics"
+	}
+}
