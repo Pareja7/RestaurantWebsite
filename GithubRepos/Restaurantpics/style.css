@@ -167,10 +167,89 @@ background: url(slideshow-9.jpg);
 .btn:hover .btn:before{
   left: 0;
 }
+.swiper-pagination-bullet{
+  background:var(--light-color)!important;
+  width:15px!important;
+  height: 15px !important;
+  border-radius:0 !important;
+}
 
-/*slider stye end*/
+/*slider style end*/
 
-/*Media query
+/*welcome style start*/
+section{
+  padding: 8rem 9%;
+}
+.heading{
+  text-align:center;
+  color: var(--black);
+  font-size: 4.5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+.sub-heading{
+  text-align:center;
+  color: var(--light-color);
+  font-size: 2.5rem;
+  padding: .5rem 2rem;
+  font-weight:300;
+  margin-bottom: 4rem;
+  background: var(--black);/*background takes container width*/
+  display:inline-block; /*resized bkgrnd to fit*/
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+.welcome .box-container{
+  display: flex;
+  gap: 1.5rem;
+}
+.welcome .box-container .box{
+  width: 33%; /*divides available box spc tween 3 imgs on x axis*/
+  background: var(--black);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding-bottom: 1%;
+}
+.welcome .box-container .box .image{
+height: 25rem;
+width: 100%;
+overflow: hidden;
+position: relative;
+}
+.welcome .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.welcome .box-container .box .image:hover img{
+  
+  transform: scale(1.1);
+}
+.welcome .box-container .box .content{
+  padding:2rem;
+  padding-top:2rem;
+}
+
+.welcome .box-container .box .content h3{
+color: var(--light-color);
+font-size: 2.2rem;
+font-weight: 400;
+}
+
+.welcome .box-container .box .content p{
+  color:white; 
+  font-size: 1.4rem;
+  font-weight:300;
+  padding: .5rem 0;
+  line-height: 1.5rem;
+}
+
+
+/*welcome style end*/
+
+/*Media query*/
 @media (max-width: 991px){
   html{
     font-size: 55%;
@@ -185,7 +264,7 @@ background: url(slideshow-9.jpg);
 }
 @media (max-width: 768px){
 
-  /*Navbar Media Query*
+  /*Navbar Media Query*/
   header .logo img{
     height: 7rem;
   }
@@ -216,5 +295,18 @@ header .navbar .active{
     background: var(--black);
 
   }
+/*slider media query*/
+.home .home-slider .slide{
+  justify-content: center;
+  height: 80vh;
+}
+.home .home-slider .slide .content{
+  padding: 0;
+}
+.home .home-slider .slide .content h1{
+  font-size:7rem;
+
+}
+
 
 }
