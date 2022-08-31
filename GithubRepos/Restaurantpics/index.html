@@ -9,8 +9,11 @@
 
   <!-- custom css file link -->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Link Swiper's Css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
+
 <body class="body">
   <!--header section start -->
   <header>
@@ -36,9 +39,9 @@
 
   <!--slider section start -->
   <div class="home" id="home">
-    <div class="home-slider">
-      <div class="wrapper">
-        <div class="slide slide1">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slide slide1">
           
         <div class="content">
           <img src="crown-symbol.png">
@@ -46,11 +49,11 @@
           <h3>delicious royate</h3>
           <h1>gift voucher</h1>
           <p> give away for our beloved customers</p>
-          <a href="#" style= "color:White; font-size: 1.75em" class="btn"> Order Now</a>
+          <a href="#"  class="btn"> Order Now</a>
         </div>
       </div>
 
-      <div class="slide slide2">
+      <div class="swiper-slide slide slide2">
         <div class="content">
           <img src="crown-symbol.png">
 
@@ -61,7 +64,7 @@
         </div>
         </div>
 
-        <div class="slide slide3">
+        <div class="swiper-slide slide slide3">
           <div class="content">
             <img src="crown-symbol.png">
   
@@ -72,9 +75,32 @@
             </div>
           </div>
       </div>
+      <div class="swiper-pagination"></div>
+
     </div>
   </div>
 <!--slider section ends-->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".home-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    loop: true,
+  });
+</script>
+
   
 <script type="text/javascript">
    let menu = document.querySelector('#menu');
